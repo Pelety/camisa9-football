@@ -116,11 +116,11 @@ export const Signup = () => {
 
           <button
             className=" block w-full text-center text-white border border-white text-2xl px-8 py-3 rounded-xl font-bold bg-red-500 disabled:bg-gray-300"
-            type="submit"
-            href="/dashboard"
+            /*type="submit"
+            href="/dashboard"*/
             disabled={!formik.isValid || formik.isSubmitting}
           >
-            {formik.isSubmitting ? "FALTA POUCO..." : "JUNTE-SE A NÓS"}
+            <a>{formik.isSubmitting ? "FALTA POUCO..." : "JUNTE-SE A NÓS"}</a>
           </button>
         </form>
       </main>
